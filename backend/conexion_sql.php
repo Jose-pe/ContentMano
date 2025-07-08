@@ -4,7 +4,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db   = 'cms_db';
+$db   = 'latinobd';
 
     $conn = new mysqli($host, $user, $pass, $db);
 
