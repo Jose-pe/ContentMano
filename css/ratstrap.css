@@ -20,6 +20,10 @@
     width: 45% !important;
 }
 
+.pt-8{
+    padding-top: 15rem !important;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -479,6 +483,10 @@ h1,h2,h3,h4,h5,h6{
     background-color: #F4F4F4;
 }
 
+.form-label{
+    font-weight: bolder !important;
+}
+
 .primarybutton
 {
     background-color: #ff9c00 !important;
@@ -616,6 +624,7 @@ h1,h2,h3,h4,h5,h6{
 .slogansocial{
     font-size: 1.5rem;
 }
+
 
 
 @media (max-width: 1715px) {
