@@ -4,7 +4,7 @@ CREATE TABLE posts (
     slug VARCHAR(255) NOT NULL UNIQUE,   
     descripcion_corta TEXT NOT NULL,
     cuerpo_articulo TEXT NOT NULL,
-    image_one VARCHAR(255), -- opcional: para una imagen destacada
+    image_one VARCHAR(255), -- para una imagen destacada
     image_two VARCHAR(255),  
     image_three VARCHAR(255),
     tags VARCHAR(255),
