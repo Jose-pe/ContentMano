@@ -30,11 +30,55 @@ if (isset($_FILES['image_one']) && $_FILES['image_one']['error'] === 0) {
     if (move_uploaded_file($_FILES["image_one"]["tmp_name"], $targetFile)) {
         $image_path_one = $targetFile;
     }
+}else{
+     $image_path_one = 'img_post/holder.jpg';
+}
+
+if (isset($_FILES['image_two']) && $_FILES['image_two']['error'] === 0) {
+    $targetDir = "img_post/";
+    $filename = basename($_FILES["image_two"]["name"]);
+    $uniqueName = uniqid() . "_" . $filename;
+    $targetFile = $targetDir . $uniqueName;
+    $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+    $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+    // Validaciones básicas
+    $check = getimagesize($_FILES["image_two"]["tmp_name"]);
+    if ($check === false || !in_array($imageFileType, $allowed)) {
+        die("Archivo no válido.");
+    }
+
+    if (move_uploaded_file($_FILES["image_two"]["tmp_name"], $targetFile)) {
+        $image_path_two = $targetFile;
+    }
+}
+else{
+     $image_path_two = 'img_post/holder.jpg';
+}
+if (isset($_FILES['image_three']) && $_FILES['image_three']['error'] === 0) {
+    $targetDir = "img_post/";
+    $filename = basename($_FILES["image_three"]["name"]);
+    $uniqueName = uniqid() . "_" . $filename;
+    $targetFile = $targetDir . $uniqueName;
+    $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+    $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+    // Validaciones básicas
+    $check = getimagesize($_FILES["image_three"]["tmp_name"]);
+    if ($check === false || !in_array($imageFileType, $allowed)) {
+        die("Archivo no válido.");
+    }
+
+    if (move_uploaded_file($_FILES["image_three"]["tmp_name"], $targetFile)) {
+        $image_path_three = $targetFile;
+    }
+}else{
+     $image_path_three = 'img_post/holder.jpg';
 }
 
 // Insertar en la base de datos
 $stmt = $conn->prepare("INSERT INTO posts (titulo, slug, descripcion_corta, cuerpo_articulo, image_one, image_two, image_three, tags, metatags, estado) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssssssss", $titulo, $slug, $descripcion_corta, $cuerpo_articulo, $image_path_one, $image_two_path, $image_three_path, $tags, $metatags, $estado);
+$stmt->bind_param("ssssssssss", $titulo, $slug, $descripcion_corta, $cuerpo_articulo, $image_path_one, $image_path_two, $image_path_three, $tags, $metatags, $estado);
 $stmt->execute();
 
 echo "Post creado con imagen<br><a href='index.php'>Ver todos los posts</a>";

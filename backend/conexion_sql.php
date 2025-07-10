@@ -11,7 +11,7 @@ $db   = 'latinobd';
     if ($conn->connect_error) {
         die("Conexión fallida: " . $conn->connect_error);
     } else{
-        echo('Conexion exitosa');
+        /*('Conexion exitosa');*/
     }
 
 //production
