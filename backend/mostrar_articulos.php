@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/ratstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ratstrapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -34,7 +34,7 @@
  
         <div class="flexrow">
           <div class="flexcol">
-            <img src="img/logo.png" class="logoresponsive" alt="Latino Tours Cusco">
+            <img src="../img/logo.png" class="logoresponsive" alt="Latino Tours Cusco">
           </div>
           <div class="flexcol text-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,31 +53,31 @@
       <!--  <h5 class="text-white h4">Collapsed content</h5> -->
         <ul class="navbar-nav justify-content-center" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a  class="nav-linkwhite " aria-current="page" href="index.html">Home</a>
+            <a  class="nav-linkwhite " aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-linkwhite " href="traditionaltours.html">Traditional Tours</a>
+            <a  class="nav-linkwhite " href="../traditionaltours.html">Traditional Tours</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-linkwhite " href="adventuretours.html">Adventure Tours</a>
+            <a  class="nav-linkwhite " href="../adventuretours.html">Adventure Tours</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-linkwhite " href="perudestinations.html">Peru Destinations</a>
+            <a  class="nav-linkwhite " href="../perudestinations.html">Peru Destinations</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-linkwhite" href="touristcircuit.html">Tourist Circuits of Cusco</a>
+            <a  class="nav-linkwhite" href="../touristcircuit.html">Tourist Circuits of Cusco</a>
           </li>         
           <li class="nav-item">
-            <a class="nav-linkwhite " href="folklorefeast.html">Folklore Tours</a>
+            <a class="nav-linkwhite " href="../folklorefeast.html">Folklore Tours</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-linkwhite" href="spanish-school.html">Spanish School</a>
+            <a  class="nav-linkwhite" href="../spanish-school.html">Spanish School</a>
           </li>
           <li class="nav-item">
-            <a class="nav-linkwhite" href="social-programs.html">Social Programs</a>
+            <a class="nav-linkwhite" href="../social-programs.html">Social Programs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-linkwhite" href="blog.html">Blog</a>
+            <a class="nav-linkwhite" href="mostrar_articulos.php">Blog</a>
           </li>
          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -120,32 +120,32 @@
                           <div class="collapse navbar-collapse" id="navbarScroll">
                             <ul class="navbar-nav justify-content-center  navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                               <li class="nav-item">
-                                <a id="linkmenu1" class="nav-link " aria-current="page" href="index.html">Home</a>
+                                <a id="linkmenu1" class="nav-link " aria-current="page" href="../index.html">Home</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu2" class="nav-link " href="traditionaltours.html">Traditional Tours</a>
+                                <a id="linkmenu2" class="nav-link " href="../traditionaltours.html">Traditional Tours</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu3" class="nav-link " href="adventuretours.html">Adventure Tours</a>
+                                <a id="linkmenu3" class="nav-link " href="../adventuretours.html">Adventure Tours</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu4" class="nav-link " href="perudestinations.html">Peru Destinations</a>
+                                <a id="linkmenu4" class="nav-link " href="../perudestinations.html">Peru Destinations</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu5" class="nav-link " href="touristcircuit.html">Tourist Circuits of Cusco</a>
+                                <a id="linkmenu5" class="nav-link " href="../touristcircuit.html">Tourist Circuits of Cusco</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu7" class="nav-link " href="folklorefeast.html">Folklore Tours</a>
+                                <a id="linkmenu7" class="nav-link " href="../folklorefeast.html">Folklore Tours</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu6" class="nav-link " href="spanish-school.html">Spanish School</a>
+                                <a id="linkmenu6" class="nav-link " href="../spanish-school.html">Spanish School</a>
                               </li>
                               
                               <li class="nav-item">
-                                <a id="linkmenu8" class="nav-link " href="social-programs.html">Social Programs</a>
+                                <a id="linkmenu8" class="nav-link " href="../social-programs.html">Social Programs</a>
                               </li>
                               <li class="nav-item">
-                                <a id="linkmenu8" class="nav-link " href="blog.html">Blog</a>
+                                <a id="linkmenu9" class="nav-link " href="mostrar_articulos.php">Blog</a>
                               </li>
                              <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -249,8 +249,8 @@
     </footer>
 
 
-<script src="/js/bootstrap.js"></script>
-<script src="/js/bootsrat.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootsrat.js"></script>
 
 </body>
 </html>
