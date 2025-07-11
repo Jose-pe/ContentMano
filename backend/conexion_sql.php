@@ -1,5 +1,5 @@
 <?php
-/*local
+//local
 
 $host = 'localhost';
 $user = 'root';
@@ -12,10 +12,10 @@ $db   = 'latinobd';
         die("Conexión fallida: " . $conn->connect_error);
     } else{
         ('Conexion exitosa');
-    }*/
+    }
 
 //production
-
+/*
 $host = 'lsql105.infinityfree.com';
 $user = 'if0_35945180';
 $pass = 'IN1H4mIuJyAMG';
@@ -28,6 +28,6 @@ $db   = 'if0_35945180_latino';
     }
     else{
         //echo('Conexion exitosa');
-    }
+    }*/
 
 ?>

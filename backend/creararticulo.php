@@ -88,6 +88,15 @@
         </div> 
    
     </section>
+<script>
+  const cuerpo = document.getElementById('cuerpo_articulo');
 
+  cuerpo.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+      //event.preventDefault(); // Evita el salto de línea
+      this.value += '<br><br>'; // Agrega la etiqueta <br>
+    }
+  });
+</script>
 </body>
 </html>
