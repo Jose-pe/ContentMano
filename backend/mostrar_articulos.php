@@ -201,7 +201,7 @@
             echo '<div class="card-body">';
             echo '<h5 class="card-title titlecard text-truncate">'. $post["titulo"] .'</h5>';
             echo '<p class="card-text textcard text-truncate">'.$post["descripcion_corta"].'</p>';
-            echo '<p class="card-text textstrong">Tags:' .$post["tags"].'</p>';
+            echo '<p class="card-text textstrong">Tags: ' .$post["tags"].'</p>';
             echo '</div>';
             echo '</div>';
             echo '</a>';
