@@ -48,12 +48,12 @@
                     <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Titulo del articulo">
                     </div>                     
                     <div class="mb-3">
-                    <label for="descripcion_corta" class="form-label">Parrafo Principal</label>                   
-                    <textarea name="descripcion_corta" name="descripcion_corta" id="descripcion_corta" class="form-control" rows="10" cols="50" placeholder="Ingrese una descripcion corta del articulo"></textarea>
+                    <label for="descripcion_corta" class="form-label">Descripcion corta</label>                   
+                    <textarea name="descripcion_corta" name="descripcion_corta" id="descripcion_corta" class="form-control" rows="3" cols="50" placeholder="Ingrese una descripcion corta del articulo"></textarea>
                     </div>                   
                     <div class="mb-3">
-                     <label for="cuerpo_articulo" class="form-label">Parrafo Secundario</label>                   
-                    <textarea name="cuerpo_articulo" id="cuerpo_articulo"  class="form-control" rows="15" cols="50" placeholder="Escriba el cuerpo del articulo"></textarea>
+                     <label for="cuerpo_articulo" class="form-label">Cuerpo Articulo</label>                   
+                    <textarea name="cuerpo_articulo" id="cuerpo_articulo"  class="form-control" rows="15" cols="50" placeholder="Escriba el cuerpo del articulo. Para separar parrafos ingrese <br><br>"></textarea>
                     </div>
                     <div class="mb-3">
                     <label for="image_one" class="form-label">Imagen principal</label>
@@ -75,13 +75,7 @@
                     <label for="metatags" class="form-label">MetaTag's</label>
                     <input type="text" class="form-control" name="metatags" id="metatags" placeholder="Ingrese una muy breve descripcion del articulo">
                     </div>
-                     <div class="mb-3">
-                    <label for="estado" class="form-label">Como quiere guardar este articulo</label>
-                    <select name="estado" id="estado" class="form-select">
-                    <option value="publicado" selected>Publicar</option>
-                    <option value="borrador">Guardar como borrador</option>                  
-                    </select>
-                    </div>
+                  
                     <div class="row pb-5">
                         <div class="col-12 text-center ">
                          <button type="submit" class="btn btn-warning primarybutton mt-3">Guardar articulo</button>

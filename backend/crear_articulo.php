@@ -12,7 +12,7 @@ $image_one_path = null;
 $image_two_path = null;
 $image_three_path = null;
 $tags = $_POST['tags'];
-$estado= $_POST['estado'];
+$estado= "publicado";
 $metatags = $_POST['metatags'];
 
 // Subida de imagen

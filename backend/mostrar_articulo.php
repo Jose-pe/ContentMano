@@ -148,7 +148,7 @@
                                 <a id="linkmenu8" class="nav-link " href="../social-programs.html">Social Programs</a>
                               </li>
                                 <li class="nav-item">
-                                <a id="linkmenu9" class="nav-link " href="../social-programs.html">Social Programs</a>
+                                <a id="linkmenu9" class="nav-link " href="mostrar_articulos.php">Blog</a>
                               </li>
                              <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -198,7 +198,7 @@
         echo   ' <div class="row justify-content-center rowicons">';
         echo   '  <div class="col-2 colicons">';
         
-        echo   '      <p><i class="fa-solid fa-face-grin-wide"></i>Francisco Astete</p>';
+        echo   '      <p><i class="fa-solid fa-user" style="color: #000000;"></i> Francisco Astete</p>';
         echo   '  </div>';
         echo   '  <div class="col-2 colicons">';
         echo   '        <p> <i class="fa-solid fa-map-location"></i> Cusco</p>';
@@ -206,9 +206,7 @@
         //echo   '  <div class="col-2 colicons">';
        // echo   '       <p> <i class="fa-solid fa-users-line"></i> 5 - 10 people</p>';
        //  echo   '  </div>';
-        echo   '   <div class="col-2 colicons">';
-        echo   '      <p><i class="fa-solid fa-clock"></i> Full Day</p> ';
-        echo   '   </div>';
+        
         echo   '   <hr>';
         echo   ' </div>';
        echo   '  <div class="row justify-content-center flexrow2">';
