@@ -177,10 +177,9 @@
       </div>
     </section>
     <section class="container-fluid" id="populartours">
-      <div class="row justify-content-center g-0 text-center p-3" id="firstrowpopular">
+      <div class="row justify-content-center g-0 text-center p-3" id="firstrowpopular">        
           
-          
-           <?php
+    <?php
 
         require 'conexion_sql.php';
         $sql = "SELECT * FROM posts         
@@ -190,29 +189,27 @@
         $result = $conn->query($sql);
 
         while ($post = $result->fetch_assoc()) {
-          //*  echo "<h2>{$post['title']}</h2>";
-           /* echo "<p>Por {$post['username']} el {$post['created_at']}</p>";
-            echo "<div>{$post['content']}</div><hr>";*/
-            echo     '<div class="col-4 colcard">';
-           echo  '<div class="row justify-content-center">';
-            echo '<a href="cusco-city-tours.html">';
+       
+            echo '<div class="col-4 colcard">';
+            echo '<div class="row justify-content-center">';
+            echo '<a href="mostrar_articulo.php?slug='. $post["slug"] . '">';
             echo '<div class="card shadow mb-5 bg-body rounded cardtours" style="width: 28rem;">';
-             echo  '<div class="img-contenedor-blog">';
-              echo '<img  width="100%" height="300" src="'. $post["image_one"] .'" class="card-img-top" alt="...">';
-            echo    '</div>';
-              echo '<div class="card-body">';
-               echo '<h5 class="card-title titlecard text-truncate">'. $post["titulo"] .'</h5>';
-                echo '<p class="card-text textcard text-truncate">'.$post["descripcion_corta"].'</p>';
-                echo '<p class="card-text textstrong">Tags:' .$post["tags"].'</p>';
-             echo '</div>';
-           echo '</div>';
-         echo '</a>';
-       echo '</div>';
-       echo '</div>';
+            echo '<div class="img-contenedor-blog">';
+            echo '<img  width="100%" height="300" src="'. $post["image_one"] .'" class="card-img-top" alt="...">';
+            echo '</div>';
+            echo '<div class="card-body">';
+            echo '<h5 class="card-title titlecard text-truncate">'. $post["titulo"] .'</h5>';
+            echo '<p class="card-text textcard text-truncate">'.$post["descripcion_corta"].'</p>';
+            echo '<p class="card-text textstrong">Tags:' .$post["tags"].'</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</a>';
+            echo '</div>';
+            echo '</div>';
         }
-    ?>  
-         
-        </div>
+    ?>
+
+      </div>
       </div>
       </div>
    

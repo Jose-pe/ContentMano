@@ -1,7 +1,10 @@
 <?php
-require 'conexion_sql.php';
-
-$titulo = $_POST['titulo'];
+ session_start();
+  require 'conexion_sql.php';
+   
+    if ($_SESSION['user'] == 'FranciscoLatino01') {
+       
+    $titulo = $_POST['titulo'];
 $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $titulo)));
 $descripcion_corta = $_POST['descripcion_corta'];
 $cuerpo_articulo = $_POST['cuerpo_articulo'];
@@ -81,6 +84,13 @@ $stmt = $conn->prepare("INSERT INTO posts (titulo, slug, descripcion_corta, cuer
 $stmt->bind_param("ssssssssss", $titulo, $slug, $descripcion_corta, $cuerpo_articulo, $image_path_one, $image_path_two, $image_path_three, $tags, $metatags, $estado);
 $stmt->execute();
 
-echo "Post creado con imagen<br><a href='index.php'>Ver todos los posts</a>";
+ header("Location: panel_administrador.php");
+    }else{
+         header("Location: ../index.html");
+    }
+
+
+
+
 
 ?>

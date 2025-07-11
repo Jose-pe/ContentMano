@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +22,21 @@
         <section class="container ">
         <div class="row justify-content-center pb-5">
             <div class="col-10 text-center">
-            <a type="button" class="btn btn-primary btn-lg">Crear articulo</a>
-            <a type="button" class="btn btn-primary btn-lg">Listar articulos</a>
-            <a type="button" class="btn btn-primary btn-lg">Listar ultimos articulos</a>           
-            <a type="button" class="btn btn-secondary btn-lg">Cerrar sesion</a>
+            <a type="button" href="#" class="btn btn-primary btn-lg">Crear articulo</a>
+            <a type="button" href="/backend/panel_administrador.php" class="btn btn-primary btn-lg">Listar articulos</a>
+            <a type="button" href="/backend/end_session.php" class="btn btn-secondary btn-lg">Cerrar sesion</a>
             </div>
             
         </div>
     </section>
-       
+      <?php 
+     session_start();
+     if ($_SESSION['user']  !== "FranciscoLatino01") {
+     header("Location: ../index.html");
+   
+    }
+?>
+   
     </div> 
     </div>
    
@@ -42,11 +49,11 @@
                     <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Titulo del articulo">
                     </div>                     
                     <div class="mb-3">
-                    <label for="descripcion_corta" class="form-label">Descripción corta</label>                   
-                    <textarea name="descripcion_corta" name="descripcion_corta" id="descripcion_corta" class="form-control" rows="4" cols="50" placeholder="Ingrese una descripcion corta del articulo"></textarea>
+                    <label for="descripcion_corta" class="form-label">Parrafo Principal</label>                   
+                    <textarea name="descripcion_corta" name="descripcion_corta" id="descripcion_corta" class="form-control" rows="10" cols="50" placeholder="Ingrese una descripcion corta del articulo"></textarea>
                     </div>                   
                     <div class="mb-3">
-                     <label for="cuerpo_articulo" class="form-label">Cuerpo del articulo</label>                   
+                     <label for="cuerpo_articulo" class="form-label">Parrafo Secundario</label>                   
                     <textarea name="cuerpo_articulo" id="cuerpo_articulo"  class="form-control" rows="15" cols="50" placeholder="Escriba el cuerpo del articulo"></textarea>
                     </div>
                     <div class="mb-3">
@@ -67,7 +74,7 @@
                     </div>
                      <div class="mb-3">
                     <label for="metatags" class="form-label">MetaTag's</label>
-                    <input type="text" class="form-control" name="metatags" id="metatags" placeholder="Ingrese un muy breve descripcion del articulo">
+                    <input type="text" class="form-control" name="metatags" id="metatags" placeholder="Ingrese una muy breve descripcion del articulo">
                     </div>
                      <div class="mb-3">
                     <label for="estado" class="form-label">Como quiere guardar este articulo</label>
