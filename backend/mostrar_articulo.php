@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/ratstrapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://latinotourscusco.com/js/bootstrap.js"></script>
+    <script src="https://latinotourscusco.com/js/bootsrat.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -33,7 +35,7 @@
  
         <div class="flexrow">
           <div class="flexcol">
-            <img src="../img/logo.png" class="logoresponsive" alt="Latino Tours Cusco">
+            <img src="/img/logo.png" class="logoresponsive" alt="Latino Tours Cusco">
           </div>
           <div class="flexcol text-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +105,7 @@
                     <p id="mail" class="datahead">  <i class="fa-solid fa-envelope"> </i> latinotourscusco@hotmail.com </p>
                 </div>
                 <div class="col-4 text-center">
-                    <img id="primarylogo" src="img/logo.png" alt="Latino Tours">
+                    <img id="primarylogo" src="/img/logo.png" alt="Latino Tours">
                 </div>
                 <div class="col-4 text-center">   
                   <a href="tel:+51984939276" class="datahead">              
@@ -366,7 +368,7 @@ echo   '        <div class="col-4 justify-content-center colbanners"  id="imgcon
     </footer>
 
 
-<script src="../js/bootstrap.js"></script>
-<script src="../js/bootsrat.js"></script>
+<script src="https://latinotourscusco.com/js/bootstrap.js"></script>
+<script src="https://latinotourscusco.com/js/bootsrat.js"></script>
 </body>
 </html>
