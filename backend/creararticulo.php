@@ -53,7 +53,7 @@
                     </div>                   
                     <div class="mb-3">
                      <label for="cuerpo_articulo" class="form-label">Cuerpo Articulo</label>                   
-                    <textarea name="cuerpo_articulo" id="cuerpo_articulo"  class="form-control" rows="15" cols="50" placeholder="Escriba el cuerpo del articulo. Para separar parrafos ingrese <br><br>"></textarea>
+                    <textarea wrap="hard" name="cuerpo_articulo" id="cuerpo_articulo"  class="form-control" rows="15" cols="50" placeholder="Escriba el cuerpo del articulo. Para separar parrafos ingrese <br><br>"></textarea>
                     </div>
                     <div class="mb-3">
                     <label for="image_one" class="form-label">Imagen principal</label>
@@ -88,15 +88,6 @@
         </div> 
    
     </section>
-<script>
-  const cuerpo = document.getElementById('cuerpo_articulo');
 
-  cuerpo.addEventListener('keydown', function(event) {
-    if (event.keyCode === 13) {
-      //event.preventDefault(); // Evita el salto de línea
-      this.value += '<br><br>'; // Agrega la etiqueta <br>
-    }
-  });
-</script>
 </body>
 </html>

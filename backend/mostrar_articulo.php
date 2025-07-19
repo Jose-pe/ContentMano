@@ -213,8 +213,8 @@
        echo   '    <div class="col-10 text-start p-5 flexcol2">';
             echo   '     <p class="textsecundary">';
        echo   ''.$post["descripcion_corta"].' </p>';
-       echo   '     <p class="textsecundary">';
-       echo   ''.$post["cuerpo_articulo"].' </p>';
+       echo   '     <pre class="textsecundary">';
+       echo   ''.$post["cuerpo_articulo"].' </pre>';
       
         echo   '  </div>      ';
        echo   ' </div>';
