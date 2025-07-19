@@ -174,7 +174,7 @@
     <section class="container pt-8" >
       <div class="row justify-content-center g-0 text-center">
         <h1 class="title">Welcome to our blog</h1>
-        <h4 id="slogan1" class="mb-5">"The best articles a information of the land of the incas."</h4>
+        <h4 id="slogan1" class="mb-5">"The best articles and information of the land of the incas."</h4>
       </div>
     </section>
     <section class="container-fluid" id="populartours">
